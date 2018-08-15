@@ -27,25 +27,46 @@
 		<main class="container">
 			<h1 class="page-title">Магазин готовых шаблонов</h1>
 
-			<section class="filters">
+			<aside class="filters">
 				<h2 class="visuality-hidden">Фильтр товаров</h2>
 				<!-- Здесь будет форма -->
-			</section>
+			</aside>
 
-			<section class="price">
-				<h2 class="visuality-hidden">Cтоимость</h2>
-				<!-- Здесь будет форма -->
-			</section>
-
-			<section class="sorting">
-				<h2 class="sorting-select">Сортировать:</h2>
-				<ul class="sorting-list">
-					<li class="sorting-by-price"><span>По цене</span></li>
-					<li class="sorting-by-type"><span>По типу</span></li>
-					<li class="sorting-by-name"><span>По названию</span></li>
+			<section class="catalog">
+				<div class="sorting">
+					<h2 class="sorting-select">Сортировать:</h2>
+					<ul class="sorting-list">
+						<li class="sorting-by-price"><span>По цене</span></li>
+						<li class="sorting-by-type"><span>По типу</span></li>
+						<li class="sorting-by-name"><span>По названию</span></li>
+					</ul>
+					<span class="button sorting-button sorting-button-up">&uarr;</span>
+					<span class="button sorting-button sorting-button-down">&darr;</span>
+				</div>
+				<h2 class="visuality-hidden">Список готовых проектов</h2>
+				<ul class="catalog-list">
+					<!--СДелана 1 карточка, на случай, если придётся переделывать -->
+					<li class="catalog-item">
+						<h3><a href="sedona.html">Sedona</a></h3>
+						<p  class="catalog-item-picture">
+							<img src="http://placehold.it/360x576" width="360" height="576" alt="Сайт «SEDONA»">
+							<img src="http://placehold.it/360x40" width="360" height="40" alt="Интерфейс браузера">
+						</p>
+						<p>Информационный сайт для туристов</p>
+						<a href="#" class="button">9900 руб.</a>
+					</li>
+					<li class="catalog-item"></li>
+					<li class="catalog-item"></li>
+					<li class="catalog-item"></li>
+					<li class="catalog-item"></li>
+					<li class="catalog-item"></li>
 				</ul>
-				<span class="button sorting-button sorting-button-up">&uarr;</span>
-				<span class="button sorting-button sorting-button-down">&darr;</span>
+				<ul class="pagination-list">
+					<li class="pagination-item pagination-item-current"><a>1</a></li>
+					<li class="pagination-item"><a href="#">2</a></li>
+					<li class="pagination-item"><a href="#">3</a></li>
+					<li class="pagination-item"><a href="#">Следующая</a></li>
+				</ul>
 			</section>
 
 		</main>
