@@ -6,87 +6,142 @@
 </head>
 <body>
 	<header class="main-header">
-			<a href="index.html" class="main-header-logo">
-				<img src="http://placehold.it/150x100" width="160" height="65" alt="Дизайн-студия «Нёрдс»">
-			</a>
-			<nav class="main-navigation">
-				<ul class="site-navigation">
-					<li><a href="studio.html">Студия</a></li>
-					<li><a href="clients.html">Клиенты</a></li>
-					<li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
-					<li><a href="contacts.html">Контакты</a></li>
-				</ul>
-			</nav>
-			<nav class="user-navigation">
-				<ul class="user-navigation">
-					<li><a href="cart.html">Корзина</a></li>
-				</ul>
-			</nav>
+			<div class="container">
+				<a class="main-header-logo">
+					<img src="http://placehold.it/150x100" width="160" height="65" alt="Дизайн-студия «Нёрдс»">
+				</a>
+				<nav class="main-navigation">
+					<ul class="site-navigation">
+						<li><a href="studio.html">Студия</a></li>
+						<li><a href="clients.html">Клиенты</a></li>
+						<li><a href="catalog.html">Магазин</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+					<p class="user-navigation">
+						<a class="login-link">Корзина</a>
+					</p>
+				</nav>
+			</div>
 		</header>
 
 		<main class="container">
 			<h1 class="page-title">Магазин готовых шаблонов</h1>
 
 			<aside class="filters">
-				<h2 class="visuality-hidden">Фильтр товаров</h2>
-				<!-- Здесь будет форма -->
+				<div class="container">
+					<h2 class="visuality-hidden">Фильтр товаров</h2>
+					<!-- Здесь будет форма -->
+				</div>	
 			</aside>
 
 			<section class="catalog">
-				<div class="sorting">
-					<h2 class="sorting-select">Сортировать:</h2>
-					<ul class="sorting-list">
-						<li class="sorting-by-price"><span>По цене</span></li>
-						<li class="sorting-by-type"><span>По типу</span></li>
-						<li class="sorting-by-name"><span>По названию</span></li>
+				<div class="container">
+					<div class="sorting">
+						<h2 class="sorting-select">Сортировать:</h2>
+						<ul class="sorting-list">
+							<li class="sorting-by-price"><span>По цене</span></li>
+							<li class="sorting-by-type"><span>По типу</span></li>
+							<li class="sorting-by-name"><span>По названию</span></li>
+						</ul>
+						<div class="ordering">
+							<span class="button ordering-button ordering-button-up">&uarr;</span>
+							<span class="button ordering-button ordering-button-down">&darr;</span>
+						</div>
+					</div>
+					<h2 class="visuality-hidden">Список готовых проектов</h2>
+					<ul class="catalog-list">
+						<!--СДелана 1 карточка, на случай, если придётся переделывать -->
+						<li class="catalog-item">
+							<p class="catalog-item-info">
+								<h3><a href="sedona.html">Sedona</a></h3>
+								<p>Информационный сайт для туристов</p>
+								<a href="#" class="button">9900 руб.</a>
+							</p>
+							<p  class="catalog-item-picture">
+								<img src="http://placehold.it/360x576" width="360" height="576" alt="Сайт «SEDONA»">
+							</p>
+						</li>
+						<li class="catalog-item">
+							<p class="catalog-item-info">
+								<h3><a href="sedona.html">Pink</a></h3>
+								<p>Приложение с уникальными фото-фильтрами</p>
+								<a href="#" class="button">29900 руб.</a>
+							</p>
+							<p  class="catalog-item-picture">
+								<img src="http://placehold.it/360x576" width="360" height="576" alt="Приложение «Pink»">
+							</p>
+						</li>
+						<li class="catalog-item">
+							<p class="catalog-item-info">
+								<h3><a href="sedona.html">Барбершоп «Borodinski»</a></h3>
+								<p>Сайт для любителей брить бороду</p>
+								<a href="#" class="button">19900 руб.</a>
+							</p>
+							<p  class="catalog-item-picture">
+								<img src="http://placehold.it/360x576" width="360" height="576" alt="Барбершоп «Borodinski»">
+							</p>
+						</li>
+						<li class="catalog-item">
+							<p class="catalog-item-info">
+								<h3><a href="sedona.html">Mishka</a></h3>
+								<p>Интернет-магазин для любителей милых штук</p>
+								<a href="#" class="button">24900 руб.</a>
+							</p>
+							<p  class="catalog-item-picture">
+								<img src="http://placehold.it/360x576" width="360" height="576" alt="Интернет-магазин «Mishka»">
+							</p>
+						</li>
+						<li class="catalog-item">
+							<p class="catalog-item-info">
+								<h3><a href="sedona.html">A+</a></h3>
+								<p>Информационный сайт онлайн-школы «A+»</p>
+								<a href="#" class="button">7900 руб.</a>
+							</p>
+							<p  class="catalog-item-picture">
+								<img src="http://placehold.it/360x576" width="360" height="576" alt="Онлайн-школа «A+»">
+							</p>
+						</li>
+						<li class="catalog-item">
+							<p class="catalog-item-info">
+								<h3><a href="sedona.html">КВАСТ</a></h3>
+								<p>Информационный сайт для любителей кваса</p>
+								<a href="#" class="button">6900 руб.</a>
+							</p>
+							<p  class="catalog-item-picture">
+								<img src="http://placehold.it/360x576" width="360" height="576" alt="Сайт «КВАСТ»">
+							</p>
+						</li>
 					</ul>
-					<span class="button sorting-button sorting-button-up">&uarr;</span>
-					<span class="button sorting-button sorting-button-down">&darr;</span>
+					<ul class="pagination-list">
+						<li class="pagination-item pagination-item-current"><a>1</a></li>
+						<li class="pagination-item"><a href="#">2</a></li>
+						<li class="pagination-item"><a href="#">3</a></li>
+					<	li class="pagination-item"><a href="#">Следующая</a></li>
+					</ul>
 				</div>
-				<h2 class="visuality-hidden">Список готовых проектов</h2>
-				<ul class="catalog-list">
-					<!--СДелана 1 карточка, на случай, если придётся переделывать -->
-					<li class="catalog-item">
-						<h3><a href="sedona.html">Sedona</a></h3>
-						<p  class="catalog-item-picture">
-							<img src="http://placehold.it/360x576" width="360" height="576" alt="Сайт «SEDONA»">
-							<img src="http://placehold.it/360x40" width="360" height="40" alt="Интерфейс браузера">
-						</p>
-						<p>Информационный сайт для туристов</p>
-						<a href="#" class="button">9900 руб.</a>
-					</li>
-					<li class="catalog-item"></li>
-					<li class="catalog-item"></li>
-					<li class="catalog-item"></li>
-					<li class="catalog-item"></li>
-					<li class="catalog-item"></li>
-				</ul>
-				<ul class="pagination-list">
-					<li class="pagination-item pagination-item-current"><a>1</a></li>
-					<li class="pagination-item"><a href="#">2</a></li>
-					<li class="pagination-item"><a href="#">3</a></li>
-					<li class="pagination-item"><a href="#">Следующая</a></li>
-				</ul>
 			</section>
-
 		</main>
 			
 		<footer class="main-footer">
-				<b>Давайте дружить, это выгодно!</b>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
-				<div class="social-buttton">
-					<ul class="social-button-list">
-						<li class="social-button-item"><a href="http://vk.com" class="button">Вконтакте</a></li>
-						<li class="social-button-item"><a href="http://fb.com" class="button">Facebook</a></li>
-						<li class="social-button-item"><a href="http://instagram.com" class="button">Instagram</a></li>
-					</ul>
+				<div class="container">
+					<b>Давайте дружить, это выгодно!</b>
+					<p>Скидка 10% для друзей из социальных сетей.</p>
+					<div class="social-buttton">
+						<ul class="social-button-list">
+							<li class="social-button-item"><a href="http://vk.com" class="button">Вконтакте</a></li>
+							<li class="social-button-item"><a href="http://fb.com" class="button">Facebook</a></li>
+							<li class="social-button-item"><a href="http://instagram.com" class="button">Instagram</a></li>
+						</ul>
+					</div>
 				</div>
 			</footer>
 
 			<section class="modal modal-contact-us">
-				<h2>Напишите нам</h2>
-				<!--Здесь, возможно, будет форма-->
-				<span class="modal-close">x</span>
+				<div class="container">
+					<h2>Напишите нам</h2>
+					<!--Здесь, возможно, будет форма-->
+					<span class="modal-close">x</span>
+				</div>
 			</section>
 	
 </body>

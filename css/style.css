@@ -1,0 +1,9 @@
+.container {
+	background-color: lightblue;
+	width: 1400px;
+	margin: 0 auto;
+}
+
+header, main, footer {
+	background-color: blue;
+}
