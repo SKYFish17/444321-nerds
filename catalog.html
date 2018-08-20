@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HTML Academy: Нёрдс</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
@@ -26,26 +27,114 @@
 
 	<main>
 
-	<div class="title">
-		<h1 class="page-title">Магазин готовых шаблонов</h1>
-	</div>
-
-	<section class="catalog">
-		<div class="container">
-			<aside class="filters"></aside>
-			<div class="catalog-contents">
-				<div class="sorting"></div>
-				<div class="catalog-cards"></div>
-				<ul class="pagination"></ul>
-			</div>
+		<div class="title">
+			<h1 class="page-title">Магазин готовых шаблонов</h1>
 		</div>
-	</section>
+
+		<section class="catalog">
+			<div class="container">
+				<aside class="filters">
+					<div class="container">
+						<h2 class="visually-hidden">Фильтр товаров</h2>
+						<!--Здесь будет форма-->
+					</div>
+				</aside>
+
+				<div class="catalog-contents">
+					<div class="sorting">
+						<div class="sorting-by-parameter">
+							<h2 class="sorting-title">Сортировать:</h2>
+							<ul class="sorting-list">
+								<li class="sorting-by-price"><span>По цене</span></li>
+								<li class="sorting-by-type"><span>По типу</span></li>
+								<li class="sorting-by-name"><span>По названию</span></li>
+							</ul>
+						</div>
+						<div class="sorting-by-direction">
+							<span class="button ordering-button ordering-button-up">&uarr;</span>
+							<span class="button ordering-button ordering-button-down">&darr;</span>
+						</div>
+					</div>
+					<div class="catalog-cards">
+						<h2 class="visually-hidden">Список готовых проектов</h2>
+						<ul class="catalog-list">
+							<li class="catalog-item">
+								<p class="catalog-item-info">
+									<h3><a href="sedona.html">Sedona</a></h3>
+									<p>Информационный сайт для туристов</p>
+									<a href="#" class="button">9900 руб.</a>
+								</p>
+								<figure  class="catalog-item-picture">
+									<img src="http://placehold.it/360x576" width="360" height="576" alt="Сайт «SEDONA»">
+								</figure>
+							</li>
+							<li class="catalog-item">
+								<p class="catalog-item-info">
+									<h3><a href="sedona.html">Pink</a></h3>
+									<p>Приложение с уникальными фото-фильтрами</p>
+									<a href="#" class="button">29900 руб.</a>
+								</p>
+								<figure  class="catalog-item-picture">
+									<img src="http://placehold.it/360x576" width="360" height="576" alt="Приложение «Pink»">
+								</figure>
+							</li>
+							<li class="catalog-item">
+								<p class="catalog-item-info">
+									<h3><a href="sedona.html">Барбершоп «Borodinski»</a></h3>
+									<p>Сайт для любителей брить бороду</p>
+									<a href="#" class="button">19900 руб.</a>
+								</p>
+								<figure  class="catalog-item-picture">
+									<img src="http://placehold.it/360x576" width="360" height="576" alt="Барбершоп «Borodinski»">
+								</figure>
+							</li>
+							<li class="catalog-item">
+								<p class="catalog-item-info">
+									<h3><a href="sedona.html">Mishka</a></h3>
+									<p>Интернет-магазин для любителей милых штук</p>
+									<a href="#" class="button">24900 руб.</a>
+								</p>
+								<figure  class="catalog-item-picture">
+									<img src="http://placehold.it/360x576" width="360" height="576" alt="Интернет-магазин «Mishka»">
+								</figure>
+							</li>
+							<li class="catalog-item">
+								<p class="catalog-item-info">
+									<h3><a href="sedona.html">A+</a></h3>
+									<p>Информационный сайт онлайн-школы «A+»</p>
+									<a href="#" class="button">7900 руб.</a>
+								</p>
+								<figure  class="catalog-item-picture">
+									<img src="http://placehold.it/360x576" width="360" height="576" alt="Онлайн-школа «A+»">
+								</figure>
+							</li>
+							<li class="catalog-item">
+								<p class="catalog-item-info">
+									<h3><a href="sedona.html">КВАСТ</a></h3>
+									<p>Информационный сайт для любителей кваса</p>
+									<a href="#" class="button">6900 руб.</a>
+								</p>
+								<figure  class="catalog-item-picture">
+									<img src="http://placehold.it/360x576" width="360" height="576" alt="Сайт «КВАСТ»">
+								</figure>
+							</li>
+						</ul>
+						<ul class="pagination-list">
+							<li class="pagination-item pagination-item-current"><a>1</a></li>
+							<li class="pagination-item"><a href="#">2</a></li>
+							<li class="pagination-item"><a href="#">3</a></li>
+							<li class="pagination-item"><a href="#">Следующая</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
 
 <!--
 
 		<aside class="filters">
 			<div class="container">
-				<h2 class="visuality-hidden">Фильтр товаров</h2>
+				<h2 class="visually-hidden">Фильтр товаров</h2>
 
 			</div>	
 		</aside>
@@ -64,7 +153,7 @@
 						<span class="button ordering-button ordering-button-down">&darr;</span>
 					</div>
 				</div>
-				<h2 class="visuality-hidden">Список готовых проектов</h2>
+				<h2 class="visually-hidden">Список готовых проектов</h2>
 				<ul class="catalog-list">
 
 					<li class="catalog-item">
