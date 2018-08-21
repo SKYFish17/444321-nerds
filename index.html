@@ -18,7 +18,7 @@
 					<li><a href="catalog.html">Магазин</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
-				<a class="login-link">Корзина</a><!--делаю после разметки-->
+				<a href="#" class="login-link">Корзина</a><!--делаю после разметки-->
 			</nav>
 		</div>
 	</header>
@@ -86,26 +86,26 @@
 					<li class="service-item">
 						<h3 class="service-title">Веб-сайты</h3>
 						<figure class="website-picture"><!--убрать отступы в CSS-->
-							<img src="img/web-site.png" width="300" height="146"alt="Веб-сайт">
+							<img src="img/web-site.png" width="300" height="146"alt="Пример веб-сайта">
 						</figure><!--убрать отступы-->
 						<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-						<a href="contacts.html" class="button">Заказать</a>
+						<a href="#" class="button service-button-1">Заказать</a>
 					</li>
 					<li class="service-item">
 						<h3 class="service-title">Приложения</h3>
 						<figure class="app-picture">
-							<img src="img/app.png" width="300" height="146"alt="Приложение для телефона">
+							<img src="img/app.png" width="300" height="146"alt="Пример приложения для телефона">
 						</figure>
 						<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-						<a href="contacts.html" class="button">Заказать</a>
+						<a href="#" class="button service-button-2">Заказать</a>
 					</li>
 					<li class="service-item">
 						<h3 class="service-title">Презентации</h3>
 						<figure class="presentation-picture">
-							<img src="img/presentation.png" width="300" height="146"alt="Презентация">
+							<img src="img/presentation.png" width="300" height="146"alt="Пример презентации">
 						</figure>
 						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-						<a href="contacts.html" class="button">Заказать</a>
+						<a href="#" class="button service-button-3">Заказать</a>
 					</li>
 				</ul>
 			</div>
@@ -194,7 +194,7 @@
 					ул. Б. Конюшенная, д. 19/8<br>
 					тел. +7 (812) 275-75-75
 				</p>
-				<a href="contacts.html" class="button">Напишите нам</a>
+				<a href="#" class="button contacts-button">Напишите нам</a>
 			</div>
 		</div>
 		<div class="map">Карта</div>
@@ -218,8 +218,25 @@
 <section class="modal modal-contact-us">
 	<div class="container">
 		<h2>Напишите нам</h2>
-		<!--Здесь, возможно, будет форма-->
-		<span class="modal-close">x</span>
+		<form class="contact-us-form" action="https://echo.htmlacademy.ru" method="post">
+			<p>
+				<label>Ваше имя:
+					<input class="contact-us-form-name" type="text" name="name" placeholder="Имя Фамилия">
+				</label>
+			</p>
+			<p>
+				<label>Ваше e-mail:
+					<input class="contact-us-form-email" type="email" name="email" placeholder="email@example.com">
+				</label>
+			</p>
+			<p>
+				<label>Текст письма:
+					<input class="contact-us-form-text" type="text" name="text" placeholder="В свободной форме">
+				</label>
+			</p>
+			<button class="button contact-us-form-button" type="submit">Отправить</button>
+		</form>
+		<button class="button button-modal-close visually-hidden" type="button">Закрыть</button>
 	</div>
 </section>
 
