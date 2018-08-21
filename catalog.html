@@ -8,7 +8,7 @@
 <body>
 	<header class="main-header">
 		<div class="container">
-			<a class="main-header-logo">
+			<a href="index.html" class="main-header-logo">
 				<img src="img/nerds-logo.svg" width="160" height="65" alt="Дизайн-студия «Нёрдс»">
 			</a>
 			<nav class="main-navigation">
@@ -35,7 +35,29 @@
 			<div class="container">
 				<aside class="filters">
 						<h2 class="visually-hidden">Фильтр товаров</h2>
-						<!--Здесь будет форма-->
+						<form action="https://echo.htmlacademy.ru" method="post">
+							<p>
+								<h3>Стоимость:</h3>
+								<label>От<input class="filters-price" type="number" min="0" max="29999" name="price-from"></label>
+								<label>До<input class="filters-price" type="number" min="1" max="30000" name="price-to"></label>
+							</p>
+							<p>
+								<h3>Сетка:</h3>
+								<label>Адаптивная<input class="filters-grid" type="radio" name="grid-adaptive"></label>
+								<label>Фиксированная<input class="filters-grid" type="radio" name="grid-fix"></label>
+								<label>Резиновая<input class="filters-grid" type="radio" name="grid-flex"></label>
+							</p>
+							<p>
+								<h3>Особенности:</h3>
+									<label>Слайдер<input class="filters-features" type="checkbox" name="features-slider"></label>
+									<label>Блок преимуществ<input class="filters-features" type="checkbox" name="features-priviledge"></label>
+									<label>Новости<input class="filters-features" type="checkbox" name="features-news"></label>
+									<label>Галерея<input class="filters-features" type="checkbox" name="features-gallery"></label>
+									<label>Корзина<input class="filters-features" type="checkbox" name="features-basket"></label>
+								</label>
+							</p>
+							<button class="button filters-button" type="submit">Показать</button>
+						</form>
 				</aside>
 
 				<div class="catalog-contents">
@@ -43,14 +65,14 @@
 						<div class="sorting-by-parameter">
 							<h2 class="sorting-title">Сортировать:</h2>
 							<ul class="sorting-list">
-								<li class="sorting-by-price"><span>По цене</span></li>
-								<li class="sorting-by-type"><span>По типу</span></li>
-								<li class="sorting-by-name"><span>По названию</span></li>
+								<li class="sorting-by-price"><a href="#a">По цене</a></li>
+								<li class="sorting-by-type"><a href="#a">По типу</a></li>
+								<li class="sorting-by-name"><a href="#a">По названию</a></li>
 							</ul>
 						</div>
 						<div class="sorting-by-direction">
-							<span class="button ordering-button ordering-button-up">&uarr;</span>
-							<span class="button ordering-button ordering-button-down">&darr;</span>
+							<a href="#" class="sorting-up">Вверх</a>
+							<a href="#" class="sorting-down">Вниз</a>
 						</div>
 					</div>
 					<div class="catalog-cards">
