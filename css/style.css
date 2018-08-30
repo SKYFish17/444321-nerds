@@ -22,6 +22,7 @@ body {
 a {
   text-decoration: none;
 }
+/*Главная страница*/
 /* Стилизация заголовка страницы-начало*/
 .main-header .container {
   text-transform: uppercase;
@@ -348,10 +349,122 @@ input:focus::-webkit-input-placeholder {
 	color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
 }
-
 /* Стилизация модальное окно-конец*/
+/*Главная страница*/
+
+/*Страница магазин*/
+/*Стилизация блока заголовок-начало*/
+.page-title {
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  color: #000000;
+  background-color: #eeeeee;
+}
+/*Стилизация блока заголовок-конец*/
+
+/*Стилизация блока фильтры-начало*/
+.filter legend {
+  font-size: 17.5px;
+  font-weight: bold;
+  line-height: 1.8;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+
+.filter fieldset {
+	border: none;
+}
+
+.filter ul{
+	list-style: none;
+}
+
+.filter-price lable {
+  line-height: 1.38;
+  color: #283136;
+}
+
+.filter-input-counter {
+  line-height: 1.38;
+  text-align: center;
+  color: #283136;
+  background-color: #eeeeee;
+  border: none;
+}
+
+.filter-grid {
+  line-height: 1.25;
+  color: #283136;
+}
+
+.filter-input:hover + lable,
+.filter-input:focus + lable {
+	color: #000000;
+}
+
+.filter-input:disabled {
+	opacity: 0.3;
+	color: rgba(40, 49, 54, 0.3);
+}
+
+.filters-button {
+	width: 260px;
+  height: 50px;
+  font-size: 17.5px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  color: #000000;
+  background-color: #eeeeee;
+  border: none;
+}
+
+.filters-button:hover,
+.filters-button:focus {
+	background-color: #dfdfdf;
+}
+
+.filters-button:active {
+	background-color: #d5d5d5;
+	color: rgba(0, 0, 0, 0.3);
+}
+/*Стилизация блока фильтры-конец*/
+
+/*Стилизация блока сортировка-начало*/
+.sorting-title {
+	font-size: 17.5px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000000;
+}
+
+.sorting-list {
+	list-style: none;
+}
+
+.sorting a {
+	font-size: 14px;
+  line-height: 1.25;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.fgh:hover,
+.fgh:focus {
+	color: red;
+}
 
 
+/*Стилизация блока сортировка-конец*/
+
+/*Стилизация блока -начало*/
+/*Стилизация блока -конец*/
+
+/*Стилизация блока -начало*/
+/*Стилизация блока -конец*/
+
+/*Страница магазин*/
 .visually-hidden {
   position: absolute;
   width: 1px;
