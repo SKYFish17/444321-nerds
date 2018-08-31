@@ -16,9 +16,9 @@
 			<nav class="main-navigation">
 				<ul class="site-navigation">
 					<li><a href="index.html">Студия</a></li>
-					<li><a href="clients.html">Клиенты</a></li>
+					<li><a href="#">Клиенты</a></li>
 					<li><a href="catalog.html" class="visited">Магазин</a></li>
-					<li><a href="contacts.html">Контакты</a></li>
+					<li><a href="#">Контакты</a></li>
 				</ul>
 				<a href="#" class="login-link">Корзина</a>
 			</nav>
@@ -90,140 +90,142 @@
 									<label for="filter-basket">Корзина</label>
 								</li>
 							</ul>
-					</fieldset>
-					<button class="button filters-button" type="submit">Показать</button>
-				</form>
-			</aside>
+						</fieldset>
+						<button class="button filters-button" type="submit">Показать</button>
+					</form>
+				</aside>
 
-			<div class="catalog-contents">
-				<div class="sorting">
-					<div class="sorting-by-parameter">
+				<div class="catalog-contents">
+					<div class="sorting">
 						<h2 class="sorting-title">Сортировать:</h2>
-						<ul class="sorting-list">
-							<li class="sorting sorting-by-price"><a class="fgh" href="#">По цене</a></li>
-							<li class="sorting sorting-by-type"><a href="#">По типу</a></li>
-							<li class="sorting sorting-by-name"><a href="#">По названию</a></li>
+						<div class="sorting-by-parameter">
+							<ul class="sorting-list">
+								<li class="sorting-by-price"><a href="#">По цене</a></li>
+								<li class="sorting-by-type"><a href="#">По типу</a></li>
+								<li class="sorting-by-name"><a href="#">По названию</a></li>
+							</ul>
+						</div>
+						<div class="sorting-by-direction">
+							<ul class="sorting-list">
+							<li class="sorting-up"><a href="#"><span class="visually-hidden">Упорядочить снизу вверх</span></a></li>
+							<li  class="sorting-down"><a href="#"><span class="visually-hidden">Упорядочить сверху вниз</span></a></li>
+						</div>
+					</div>
+
+					<div class="catalog-cards">
+						<h2 class="visually-hidden">Список готовых проектов</h2>
+						<ul class="catalog-list">
+							<li class="catalog-item">
+								<div class="catalog-item-info">
+									<h3><a href="#">Sedona</a></h3>
+									<p>Информационный сайт для туристов</p>
+									<a href="#" class="button price-button" aria-label="Стоимость проекта">9900 руб.</a>
+								</div>
+								<figure class="catalog-item-picture">
+									<img src="img/sedona-card.png" width="360" height="576" alt="Сайт «SEDONA»">
+								</figure>
+							</li>
+							<li class="catalog-item">
+								<div class="catalog-item-info">
+									<h3><a href="#">Pink</a></h3>
+									<p>Приложение с уникальными фото-фильтрами</p>
+									<a href="#" class="button price-button" aria-label="Стоимость проекта">29900 руб.</a>
+								</div>
+								<figure class="catalog-item-picture">
+									<img src="img/pink-card.png" width="360" height="576" alt="Приложение «Pink»">
+								</figure>
+							</li>
+							<li class="catalog-item">
+								<div class="catalog-item-info">
+									<h3><a href="#">Барбершоп «Borodinski»</a></h3>
+									<p>Сайт для любителей брить бороду</p>
+									<a href="#" class="button price-button" aria-label="Стоимость проекта">19900 руб.</a>
+								</div>
+								<figure class="catalog-item-picture">
+									<img src="img/barbershop-card.png" width="360" height="576" alt="Барбершоп «Borodinski»">
+								</figure>
+							</li>
+							<li class="catalog-item">
+								<div class="catalog-item-info">
+									<h3><a href="#">Mishka</a></h3>
+									<p>Интернет-магазин для любителей милых штук</p>
+									<a href="#" class="button price-button" aria-label="Стоимость проекта">24900 руб.</a>
+								</div>
+								<figure class="catalog-item-picture">
+									<img src="img/mishka-card.png" width="360" height="576" alt="Интернет-магазин «Mishka»">
+								</figure>
+							</li>
+							<li class="catalog-item">
+								<div class="catalog-item-info">
+									<h3><a href="#">A+</a></h3>
+									<p>Информационный сайт онлайн-школы «A+»</p>
+									<a href="#" class="button price-button" aria-label="Стоимость проекта">7900 руб.</a>
+								</div>
+								<figure class="catalog-item-picture">
+									<img src="img/aplus-card.png" width="360" height="576" alt="Онлайн-школа «A+»">
+								</figure>
+							</li>
+							<li class="catalog-item">
+								<div class="catalog-item-info">
+									<h3><a href="#">КВАСТ</a></h3>
+									<p>Информационный сайт для любителей кваса</p>
+									<a href="#" class="button price-button" aria-label="Стоимость проекта">6900 руб.</a>
+								</div>
+								<figure class="catalog-item-picture">
+									<img src="img/kvast-card.png" width="360" height="576" alt="Сайт «КВАСТ»">
+								</figure>
+							</li>
+						</ul>
+						<ul class="pagination-list">
+							<li class="pagination-item pagination-item-current"><a aria-label="Текущая страница каталога. Страница номер">1</a></li>
+							<li class="pagination-item"><a href="#" aria-label="Страница каталога номер">2</a></li>
+							<li class="pagination-item"><a href="#" aria-label="Страница каталога номер">3</a></li>
+							<li class="pagination-item"><a href="#" aria-label="Страница каталога">Следующая</a></li>
 						</ul>
 					</div>
-					<div class="sorting-by-direction">
-						<a href="#" class="sorting-up"><span class="visually-hidden">Упорядочить снизу вверх</span></a>
-						<a href="#" class="sorting-down"><span class="visually-hidden">Упорядочить сверху вниз</span></a>
-					</div>
-				</div>
-				<div class="catalog-cards">
-					<h2 class="visually-hidden">Список готовых проектов</h2>
-					<ul class="catalog-list">
-						<li class="catalog-item">
-							<p class="catalog-item-info">
-								<h3><a href="#">Sedona</a></h3>
-								<p>Информационный сайт для туристов</p>
-								<a href="#" class="button" aria-label="Стоимость проекта">9900 руб.</a>
-							</p>
-							<figure  class="catalog-item-picture">
-								<img src="img/sedona-card.png" width="360" height="576" alt="Сайт «SEDONA»">
-							</figure>
-						</li>
-						<li class="catalog-item">
-							<p class="catalog-item-info">
-								<h3><a href="#">Pink</a></h3>
-								<p>Приложение с уникальными фото-фильтрами</p>
-								<a href="#" class="button" aria-label="Стоимость проекта">29900 руб.</a>
-							</p>
-							<figure  class="catalog-item-picture">
-								<img src="img/pink-card.png" width="360" height="576" alt="Приложение «Pink»">
-							</figure>
-						</li>
-						<li class="catalog-item">
-							<p class="catalog-item-info">
-								<h3><a href="#">Барбершоп «Borodinski»</a></h3>
-								<p>Сайт для любителей брить бороду</p>
-								<a href="#" class="button" aria-label="Стоимость проекта">19900 руб.</a>
-							</p>
-							<figure  class="catalog-item-picture">
-								<img src="img/barbershop-card.png" width="360" height="576" alt="Барбершоп «Borodinski»">
-							</figure>
-						</li>
-						<li class="catalog-item">
-							<p class="catalog-item-info">
-								<h3><a href="#">Mishka</a></h3>
-								<p>Интернет-магазин для любителей милых штук</p>
-								<a href="#" class="button" aria-label="Стоимость проекта">24900 руб.</a>
-							</p>
-							<figure  class="catalog-item-picture">
-								<img src="img/mishka-card.png" width="360" height="576" alt="Интернет-магазин «Mishka»">
-							</figure>
-						</li>
-						<li class="catalog-item">
-							<p class="catalog-item-info">
-								<h3><a href="#">A+</a></h3>
-								<p>Информационный сайт онлайн-школы «A+»</p>
-								<a href="#" class="button" aria-label="Стоимость проекта">7900 руб.</a>
-							</p>
-							<figure  class="catalog-item-picture">
-								<img src="img/aplus-card.png" width="360" height="576" alt="Онлайн-школа «A+»">
-							</figure>
-						</li>
-						<li class="catalog-item">
-							<p class="catalog-item-info">
-								<h3><a href="#">КВАСТ</a></h3>
-								<p>Информационный сайт для любителей кваса</p>
-								<a href="#" class="button" aria-label="Стоимость проекта">6900 руб.</a>
-							</p>
-							<figure  class="catalog-item-picture">
-								<img src="img/kvast-card.png" width="360" height="576" alt="Сайт «КВАСТ»">
-							</figure>
-						</li>
-					</ul>
-					<ul class="pagination-list">
-						<li class="pagination-item pagination-item-current"><a aria-label="Текущая страница каталога. Страница номер">1</a></li>
-						<li class="pagination-item"><a href="#" aria-label="Страница каталога номер">2</a></li>
-						<li class="pagination-item"><a href="#" aria-label="Страница каталога номер">3</a></li>
-						<li class="pagination-item"><a href="#" aria-label="Страница каталога">Следующая</a></li>
-					</ul>
 				</div>
 			</div>
+		</section>
+	</main>
+
+	<footer class="main-footer">
+		<div class="container">
+			<p>
+				<b>Давайте дружить, это выгодно!</b>
+				Скидка 10% для друзей из социальных сетей.
+			</p>
+			<ul class="social-button-list">
+				<li class="social-button-item"><a href="http://vk.com" class="button social-button">иконка<span class="visually-hidden">Вконтакте</span></a></li>
+				<li class="social-button-item"><a href="http://fb.com" class="button social-button">иконка<span class="visually-hidden">Facebook</span></a></li>
+				<li class="social-button-item"><a href="http://instagram.com" class="button social-button">иконка<span class="visually-hidden">Instagram</span></a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<section class="modal-contact-us">
+		<div class="container">
+			<h2>Напишите нам</h2>
+			<form class="contact-us-form" action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<label>Ваше имя:
+						<input class="contact-us-form-name" type="text" name="name" placeholder="Имя Фамилия">
+					</label>
+				</p>
+				<p>
+					<label>Ваше e-mail:
+						<input class="contact-us-form-email" type="email" name="email" placeholder="email@example.com">
+					</label>
+				</p>
+				<p>
+					<label>Текст письма:
+						<input class="contact-us-form-text" type="text" name="text" placeholder="В свободной форме">
+					</label>
+				</p>
+				<button class="button contact-us-form-button" type="submit">Отправить</button>
+			</form>
+			<button class="button button-modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 		</div>
 	</section>
-</main>
-
-<footer class="main-footer">
-	<div class="container">
-		<p>
-			<b>Давайте дружить, это выгодно!</b>
-			Скидка 10% для друзей из социальных сетей.
-		</p>
-		<ul class="social-button-list">
-			<li class="social-button-item"><a href="http://vk.com" class="button social-button">иконка<span class="visually-hidden">Вконтакте</span></a></li>
-			<li class="social-button-item"><a href="http://fb.com" class="button social-button">иконка<span class="visually-hidden">Facebook</span></a></li>
-			<li class="social-button-item"><a href="http://instagram.com" class="button social-button">иконка<span class="visually-hidden">Instagram</span></a></li>
-		</ul>
-	</div>
-</footer>
-
-<section class="modal-contact-us">
-	<div class="container">
-		<h2>Напишите нам</h2>
-		<form class="contact-us-form" action="https://echo.htmlacademy.ru" method="post">
-			<p>
-				<label>Ваше имя:
-					<input class="contact-us-form-name" type="text" name="name" placeholder="Имя Фамилия">
-				</label>
-			</p>
-			<p>
-				<label>Ваше e-mail:
-					<input class="contact-us-form-email" type="email" name="email" placeholder="email@example.com">
-				</label>
-			</p>
-			<p>
-				<label>Текст письма:
-					<input class="contact-us-form-text" type="text" name="text" placeholder="В свободной форме">
-				</label>
-			</p>
-			<button class="button contact-us-form-button" type="submit">Отправить</button>
-		</form>
-		<button class="button button-modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-	</div>
-</section>
 
 </body>
 </html>

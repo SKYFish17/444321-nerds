@@ -444,25 +444,90 @@ input:focus::-webkit-input-placeholder {
 	list-style: none;
 }
 
-.sorting a {
+.sorting-list a {
 	font-size: 14px;
   line-height: 1.25;
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.fgh:hover,
-.fgh:focus {
-	color: red;
+.sorting-list a:hover,
+.sorting-list a:focus {
+	color: rgba(0, 0, 0, 0.6);
 }
 
-
+.sorting-list a:active {
+	color: #000000;
+}
 /*Стилизация блока сортировка-конец*/
 
-/*Стилизация блока -начало*/
-/*Стилизация блока -конец*/
+/*Стилизация блока каталог-товаров-начало*/
+ .catalog-list {
+ 	list-style: none;
+ }
 
-/*Стилизация блока -начало*/
-/*Стилизация блока -конец*/
+ .catalog-item-info h3 {
+	font-size: 17.5px;
+  font-weight: bold;
+  line-height: 1.8;
+  text-align: center;
+  color: #000000;
+}
+
+.catalog-item-info a {
+	color: #000000;
+}
+
+.catalog-item-info {
+	background-color: #eeeeee;
+}
+
+.catalog-item-info .price-button {
+	font-size: 17.5px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+}
+
+.catalog-item-info .price-button:hover,
+.catalog-item-info .price-button:focus {
+	background-color: #e74246;
+}
+
+.catalog-item-info .price-button:active {
+	background-color: #d7373b;
+}
+/*Стилизация блока каталог-товаров-конец*/
+
+/*Стилизация блока пагинация-начало*/
+.pagination-item a {
+  font-size: 17.5px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+	color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
+}
+
+.pagination-item-current a {
+  background-color: #ffffff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus {
+  background-color: #ffffff;
+}
+/*Стилизация блока пагинация-конец*/
 
 /*Страница магазин*/
 .visually-hidden {
