@@ -15,8 +15,9 @@ body {
 }
 
 .container {
-	width: 1440px;
+	width: 1160px;
 	margin: 0 auto;
+  padding: 0 20px;
 }
 
 a {
@@ -92,6 +93,7 @@ a {
   line-height: 1;
   text-align: center;
   color: #ffffff;
+  background-color: #fb565a;
 }
 
 .service-button-1 {
@@ -200,9 +202,9 @@ a {
 /* Стилизация блока заказчики-конец*/
 
 /* Стилизация блока контакты-начало*/
-.contacts .container {
+.contacts {
 	background-image: url('../img/2.jpg');
-	background-color: #eeeeee;
+	/*background-color: #eeeeee;*/
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -540,3 +542,210 @@ input:focus::-webkit-input-placeholder {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/*Сеточные стили*/
+/*Заголовок*/
+.main-header {
+  padding-top: 49px;
+  background-color: #eeeeee;
+  padding-bottom: 18px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 65px;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.header-logo {
+  width: 160px;
+}
+
+.main-navigation {
+  display: flex;
+  width: 1000px;
+  align-items: center;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 202px;
+  width: 440px;
+  align-items: center;
+}
+
+.user-navigation {
+  text-align: right;
+  margin-left: auto;
+  width: 160px;
+}
+/*Заголовок*/
+
+/*Слайдер*/
+.slider {
+  min-height: 413px;
+  background-color: #eeeeee;
+  margin-bottom: 80px;
+}
+/*Слайдер*/
+
+/*Услуги*/
+.services {
+  margin-bottom: 80px;
+}
+
+.services-list {
+  margin: 0px;
+  padding: 0px;
+}
+
+.website-picture,
+.app-picture,
+.presentation-picture {
+  margin: 0px;
+  padding: 0px;
+}
+
+.services-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.service-item:nth-child(2) {
+  margin-left: 100px;
+}
+
+.service-item:nth-child(3) {
+  margin-left: 100px;
+}
+
+.service-item p {
+  width: 260px;
+}
+/*Услуги*/
+  
+/*О нас*/
+.about-us {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 40px;
+  margin-bottom: 76px;
+}
+
+.about-us-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/*О нас*/
+
+/*Наши клиенты*/
+.customers {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 80px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 180px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.customer-item:nth-child(1) {
+  margin-left: 31px;
+}
+
+.customer-item:nth-child(2) {
+  margin-left: 96px;
+}
+
+.customer-item:nth-child(3) {
+  margin-left: 103px;
+}
+
+.customer-item:nth-child(4) {
+  margin-left: 121px;
+}
+/*Наши клиенты*/
+
+/*Контактная информация*/
+.contacts {
+  min-height: 416px;
+  padding-top: 54px;
+}
+
+.contact-us {
+  width: 319px;
+  box-sizing: border-box;
+  padding-top: 54px;
+  padding-bottom: 54px;
+  padding-left: 50px;
+  background-color: #ffffff;
+}
+/*Контактная информация*/
+
+/*Футер*/
+.main-footer {
+  padding-top: 79px;
+  padding-bottom: 77px;
+}
+
+.main-footer .container {
+  display: flex;
+  align-items: center;
+}
+
+.social-button-list {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin: 0px;
+  margin-right: 139px;
+  padding: 0px;
+}
+
+.social-button-item:nth-child(1),
+.social-button-item:nth-child(2) {
+  margin-right: 40px;
+}
+
+.slogan {
+  width: 560px;
+}
+/*Футер*/
+
+/*Модальное окно*/
+.modal-contact-us .container {
+  width: 960px;
+  background-color: lightcoral;
+  box-sizing: border-box;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 73px;
+}
+
+.contact-us-form-name,
+.contact-us-form-email,
+.contact-us-form-text {
+  margin-top: 12px;
+}
+
+.contact-us-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/*Модальное окно*/
+
+
+/*Сеточные стили*/
