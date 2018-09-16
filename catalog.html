@@ -106,12 +106,12 @@
 					<div class="sorting">
 						<h2 class="sorting-title">Сортировать:</h2>
 						<ul class="sorting-by-parameter">
-							<li class="sorting-by-price"><a href="#">По цене</a></li>
+							<li class="sorting-by-price"><a class="active-paramter" href="#">По цене</a></li>
 							<li class="sorting-by-type"><a href="#">По типу</a></li>
 							<li class="sorting-by-name"><a href="#">По названию</a></li>
 						</ul>
 						<ul class="sorting-by-direction">
-							<li class="sorting-down"><a href="#"><span class="visually-hidden">Упорядочить сверху вниз</span></a></li>
+							<li class="sorting-down"><a class="active-direction" href="#"><span class="visually-hidden">Упорядочить сверху вниз</span></a></li>
 							<li class="sorting-up"><a href="#"><span class="visually-hidden">Упорядочить снизу вверх</span></a></li>
 						</ul>
 					</div>
@@ -125,8 +125,8 @@
 								</figure>
 								<div class="catalog-item-info">
 									<h3><a href="#">Sedona</a></h3>
-									<p>Информационный сайт для туристов</p>
-									<a href="#" class="button price-button" aria-label="Стоимость проекта">9900 руб.</a>
+									<p>Информационный сайт<br> для туристов</p>
+									<a href="#" class="button price-button" aria-label="Стоимость проекта">9 900 руб.</a>
 								</div>
 							</li>
 							<li class="catalog-item">
@@ -135,8 +135,8 @@
 								</figure>
 								<div class="catalog-item-info">
 									<h3><a href="#">Pink</a></h3>
-									<p>Приложение с уникальными фото-фильтрами</p>
-									<a href="#" class="button price-button" aria-label="Стоимость проекта">29900 руб.</a>
+									<p>Продуктовый лендинг приложения для iOS и Android</p>
+									<a href="#" class="button price-button" aria-label="Стоимость проекта">9 900 руб.</a>
 								</div>
 							</li>
 							<li class="catalog-item">
@@ -145,8 +145,8 @@
 								</figure>
 								<div class="catalog-item-info">
 									<h3><a href="#">Barbershop</a></h3>
-									<p>Сайт для любителей брить бороду</p>
-									<a href="#" class="button price-button" aria-label="Стоимость проекта">19900 руб.</a>
+									<p>Сайт салона красоты. Для мужчин, да.</p>
+									<a href="#" class="button price-button" aria-label="Стоимость проекта">9 900 руб.</a>
 								</div>
 							</li>
 							<li class="catalog-item">
@@ -155,8 +155,8 @@
 								</figure>
 								<div class="catalog-item-info">
 									<h3><a href="#">Mishka</a></h3>
-									<p>Интернет-магазин для любителей милых штук</p>
-									<a href="#" class="button price-button" aria-label="Стоимость проекта">24900 руб.</a>
+									<p>Интернет-магазин вязаных игрушек</p>
+									<a href="#" class="button price-button" aria-label="Стоимость проекта">9 900 руб.</a>
 								</div>
 							</li>
 							<li class="catalog-item">
@@ -165,8 +165,8 @@
 								</figure>
 								<div class="catalog-item-info">
 									<h3><a href="#">A+</a></h3>
-									<p>Информационный сайт онлайн-школы «A+»</p>
-									<a href="#" class="button price-button" aria-label="Стоимость проекта">7900 руб.</a>
+									<p>Лендинг курсов повышения квалификации</p>
+									<a href="#" class="button price-button" aria-label="Стоимость проекта">9 900 руб.</a>
 								</div>
 							</li>
 							<li class="catalog-item">
@@ -175,8 +175,8 @@
 								</figure>
 								<div class="catalog-item-info">
 									<h3><a href="#">КВАСТ</a></h3>
-									<p>Информационный сайт для любителей кваса</p>
-									<a href="#" class="button price-button" aria-label="Стоимость проекта">6900 руб.</a>
+									<p>Промо-сайт производителя крафтового кваса</p>
+									<a href="#" class="button price-button" aria-label="Стоимость проекта">9 900 руб.</a>
 								</div>
 							</li>
 						</ul>
@@ -192,19 +192,17 @@
 		</section>
 
 		<section class="contacts">
+			<h2 class="visually-hidden">Контактная информация</h2>
+			<div class="map">
+				<img src="img/2.jpg" alt="Карта местоположения офиса компании «Нердс»">
+			</div>
 			<div class="container">
-				<h2 class="visually-hidden">Контактная информация</h2>
-				<div class="map">
-					<figure class="map-picture">
-						<img src="img/2.jpg" alt="Карта местоположения офиса компании «Нердс»">
-					</figure>
-					<div class="contact-us">
-						<b>NЁRDS DESIGN STUDIO</b>
-						<p>191186, Санкт-Петербург,<br> 
-						ул. Б. Конюшенная, д. 19/8</p>
-						<span>тел. +7 (812) 275-75-75</span>
-						<a href="#" class="button contacts-button">Напишите нам</a>
-					</div>
+				<div class="contact-us">
+					<b>NЁRDS DESIGN STUDIO</b>
+					<p>191186, Санкт-Петербург,<br> 
+					ул. Б. Конюшенная, д. 19/8</p>
+					<span>тел. +7 (812) 275-75-75</span>
+					<a href="#" class="button contacts-button">Напишите нам</a>
 				</div>
 			</div>
 		</section>
@@ -227,15 +225,13 @@
 					<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21"><path d="m18 0h-15c-1.65 0-3 1.35-3 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3v-15c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5zm7.5 11h-15v-9h1.181c-.114.482-.181.983-.181 1.5 0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-.517-.066-1.018-.181-1.5h1.181zm0-11h-4v-4h4z" fill="#fff"/></svg>
 				</a></li>
 			</ul>
-			<p class="slogan">
-				<b>Давайте дружить, это выгодно!</b>
-				Скидка 10% для друзей из социальных сетей.
-			</p>
-		</div>
-	</footer>
+			<div class="slogan">
+				<p>Давайте дружить, это выгодно!</p>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</footer>
 
-	<section class="modal-contact-us">
-		<div class="container">
+		<div class="modal-contact-us">
 			<h2>Напишите нам</h2>
 			<form class="contact-us-form" action="https://echo.htmlacademy.ru" method="post">
 				<label>Ваше имя:
@@ -245,13 +241,12 @@
 					<input class="contact-us-form-email" type="email" name="email" placeholder="email@example.com">
 				</label>
 				<label>Текст письма:
-					<input class="contact-us-form-text" type="text" name="text" placeholder="В свободной форме">
+					<textarea class="contact-us-form-text" type="text" name="text" placeholder="В свободной форме"></textarea>
 				</label>
 				<button class="button contact-us-form-button" type="submit">Отправить</button>
 			</form>
 			<button class="button-modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
 		</div>
-	</section>
 
-</body>
-</html>
+	</body>
+	</html>
