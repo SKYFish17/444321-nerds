@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
@@ -28,15 +27,13 @@ input[type="radio"].visually-hidden {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   -webkit-clip-path: inset(100%);
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /*Главная страница*/
 /* Стилизация заголовка страницы-начало*/
 .main-header {
@@ -135,7 +132,6 @@ input[type="radio"].visually-hidden {
 }
 
 .visited::after {
-  /*border-bottom: 2px solid #fb565a;*/
   content: "";
   position: absolute;
   bottom: -7px;
@@ -692,35 +688,36 @@ input[type="radio"].visually-hidden {
 
 /* Стилизация блока контакты-начало*/
 .contacts {
-  position: relative;
-  min-height: 413px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .map {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  text-align: center;
+  position: relative;
+  height: 416px;
+  background-image: url("../img/2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.map-picture {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  left: -140px;
+.map iframe {
+  width: 100%;
+  height: 416px;
+  border: 0;
 }
 
 .contact-us {
   position: absolute;
-  top: 55px;
+  top: 57px;
+  left: -2px;
+  margin-left: 12%;
   width: 319px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-top: 47px;
   padding-bottom: 47px;
   padding-left: 50px;
+  text-align: left;
   background-color: #ffffff;
 }
 
@@ -762,7 +759,7 @@ input[type="radio"].visually-hidden {
 
 /* Стилизация футера-начало*/
 .main-footer {
-  padding-top: 67px;
+  padding-top: 63px;
   padding-bottom: 77px;
 }
 
@@ -883,8 +880,6 @@ input[type="radio"].visually-hidden {
   padding-right: 100px;
   padding-top: 73px;
   background-color: #fff;
-
-  margin-bottom: 50px;/*Потом убрать*/
 }
 
 .contact-us-form-name,
@@ -1092,16 +1087,15 @@ input:focus::-webkit-input-placeholder {
 }
 
 .filter-item:nth-child(1) {
-  margin-bottom: 54px;/*ВРеменно*/
+  margin-bottom: 54px;
 }
 
 .filter-item:nth-child(2) {
-  margin-bottom: 22px;/*ВРеменно*/
+  margin-bottom: 22px;
 }
 
 .filters {
   width: 360px;
-  /*margin-right: 40px;*/
 }
 
 .filter-item legend {
@@ -1223,7 +1217,8 @@ input:focus::-webkit-input-placeholder {
   opacity: 0.4;
 }
 
-.filter-input-radio:hover + label::before{
+.filter-input-radio:hover + label::before,
+.filter-input-radio:focus + label::before {
   opacity: 1;
 }
 
@@ -1260,14 +1255,15 @@ input:focus::-webkit-input-placeholder {
   top: 0px;
   left: -37px;
   width: 24px;
-  height: 23px;
+  height: 24px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.4;
 }
 
-.filter-input-checkbox:hover + label::before {
+.filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:focus + label::before {
   opacity: 1;
 }
 
@@ -1277,7 +1273,7 @@ input:focus::-webkit-input-placeholder {
   top: 0px;
   left: -37px;
   width: 27px;
-  height: 23px;
+  height: 24px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1489,7 +1485,7 @@ input:focus::-webkit-input-placeholder {
   margin-right: 8px;
 }
 
-.sorting-by-parameter .active {
+.sorting-by-parameter .active-parameter {
   color: #000000;
 }
 
@@ -1549,8 +1545,8 @@ input:focus::-webkit-input-placeholder {
 .catalog-list figure {
   margin: 0px;
   padding: 0px;
-  max-width: 360px;/*?*/
-  max-height: 576px;/*?*/
+  max-width: 360px;
+  max-height: 576px;
 }
 
 .catalog-item {
@@ -1586,6 +1582,8 @@ input:focus::-webkit-input-placeholder {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1593,6 +1591,8 @@ input:focus::-webkit-input-placeholder {
   bottom: 0px;
   left: 0px;
   width: 360px;
+  max-width: 360px;
+  padding: 1px;
   text-align: center;
 }
 
@@ -1636,7 +1636,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .catalog-item-info .price-button {
-  margin: 0 auto;
+  display: block;
   margin-bottom: 44px;
   padding-top: 17px;
   padding-bottom: 16px;
