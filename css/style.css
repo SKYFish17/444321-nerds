@@ -38,7 +38,6 @@ input[type="radio"].visually-hidden {
 /* Стилизация заголовка страницы-начало*/
 .main-header {
   padding-top: 49px;
-
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 500;
@@ -62,7 +61,9 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   min-height: 65px;
 }
 
@@ -79,14 +80,17 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
   margin-top: 6px;
+  padding-top: 20px;
   width: 1000px;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .main-navigation a {
@@ -143,12 +147,21 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   text-align: right;
   margin-left: auto;
   width: 160px;
 }
 
 .user-navigation .login-link {
+  min-width: 160px;
   position: relative;
 }
 
@@ -180,7 +193,6 @@ input[type="radio"].visually-hidden {
   position: relative;
   min-height: 413px;
   background-color: #eeeeee;
-  margin-bottom: 80px;
 }
 
 .features-list,
@@ -251,6 +263,7 @@ input[type="radio"].visually-hidden {
 .slider-navigation li {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 18px;
   height: 18px;
   padding: 8px;
@@ -324,18 +337,20 @@ input[type="radio"].visually-hidden {
   display: flex;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  justify-content: flex-start;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
 
-.service-item:nth-child(2) {
-  margin-left: 100px;
+.service-item {
+  padding-top: 80px;
 }
 
-.service-item:nth-child(3) {
-  margin-left: 100px;
+.service-item:nth-child(3n) {
+  margin-right: 60px;
 }
 
 .website-picture,
@@ -1104,7 +1119,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .filter-item:nth-child(2) {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .filters {
@@ -1178,6 +1193,7 @@ input:focus::-webkit-input-placeholder {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 50%;
   
   font-size: 16px;
@@ -1236,6 +1252,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .filter-input-radio:focus + label {
+  -webkit-box-shadow: 0px 0px 5px #4d90fe;
   box-shadow: 0px 0px 5px #4d90fe;
 }
 
@@ -1285,6 +1302,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .filter-input-checkbox:focus + label {
+  -webkit-box-shadow: 0px 0px 5px #4d90fe;
   box-shadow: 0px 0px 5px #4d90fe;
 }
 
@@ -1499,6 +1517,7 @@ input:focus::-webkit-input-placeholder {
 .sorting-by-type a,
 .sorting-by-name a {
   display: inline-block;
+  vertical-align: middle;
   text-transform: uppercase;
 }
 
@@ -1627,7 +1646,7 @@ input:focus::-webkit-input-placeholder {
 
 .catalog-item-info h3 {
   margin: 0px;
-  margin-top: 43px;
+  margin-top: 26px;
   margin-bottom: 13px;
   margin-right: 3px;
   font-size: 18px;
@@ -1641,8 +1660,11 @@ input:focus::-webkit-input-placeholder {
 .catalog-item-info p {
   margin: 0;
   padding: 0;
+  padding-left: 18px;
   line-height: 18px;
-  max-width: 240px;
+  max-width: 260px;
+  max-height: 380px;
+  overflow-y: scroll;
   margin-bottom: 31px;
 }
 
